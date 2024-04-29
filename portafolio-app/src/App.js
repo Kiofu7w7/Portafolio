@@ -1,6 +1,8 @@
+import '../src/styles/homePage.css'
+
 function App() {
   return (
-    <div className="App font-poppins bg-black text-white min-h-screen flex flex-col items-center">
+    <div className="App font-poppins text-white min-h-screen flex flex-col items-center background">
       <div className="flex flex-row items-center">
         <div className="flex flex-col gap-3">
           <div className="flex gap-2">
@@ -21,13 +23,47 @@ function App() {
           </div>
         </div>
         <div>
-          <div className="relative">
+          <div className="image-container">
             <img
               className="size-fit rounded-lg"
               src="https://res.cloudinary.com/dlwr6vxib/image/upload/v1711571811/Portafolio/handsome-young-man-with-arms-crossed-white-background-removebg-preview_admoiz.png"
               alt="fotoPerfil"
             />
-            <div className="absolute inset-x-0 bottom-0 w-full h-20 bg-gradient-to-b from-transparent to-black opacity-95"></div>
+          </div>
+        </div>
+      </div>
+      <div className='mt-10 w-full flex flex-col items-center justify-center'>
+        <div>
+          <p className="text-4xl ">Proyectos realizados</p>
+        </div>
+        <div className='w-full grid grid-cols-2 gap-6 '>
+          <div className='w-full flex justify-center'>
+            <div className='bg-white w-3/5 rounded-xl h-80 p-10 flex justify-center items-center relative'>
+              <div className="bg-[#212121] size-52 rounded-lg absolute -left-1/4">
+                <img alt='Imagen del proyecto' src=''/>
+              </div>
+            </div>
+          </div>
+          <div className='w-full flex justify-center'>
+            <div className='bg-white w-4/5 rounded-xl h-80 p-10'>
+              <div className="bg-[#212121] w">
+                <img alt='Imagen del proyecto' src=''/>
+              </div>
+            </div>
+          </div>
+          <div className='w-full flex justify-center'>
+            <div className='bg-white w-4/5 rounded-xl h-80 p-10'>
+              <div className="bg-[#212121] w">
+                <img alt='Imagen del proyecto' src=''/>
+              </div>
+            </div>
+          </div>
+          <div className='w-full flex justify-center'>
+            <div className='bg-white w-4/5 rounded-xl h-80 p-10'>
+              <div className="bg-[#212121] w">
+                <img alt='Imagen del proyecto' src=''/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
